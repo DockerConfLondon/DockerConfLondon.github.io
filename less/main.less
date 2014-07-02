@@ -1,0 +1,372 @@
+@import "bootstrap/bootstrap.less";
+
+@lightblue: #23b8eb;
+@grey: #79868b;
+
+@body-bg: #253237;
+@container-desktop: ((1040px + @grid-gutter-width));
+
+@font-family-base: 'Cabin', sans-serif;
+
+@page-header-border-color: #cccccc;
+
+.onlypc {
+  .hidden-sm();
+  .hidden-xs();
+}
+
+.gray {
+  color: @grey;
+}
+.black {
+  color: @body-bg;
+}
+
+.white {
+  color: white;
+}
+
+p.general {
+  font-size: 28px;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .logo {
+      @media (max-width: @screen-xs) {
+        width: 200px;
+      }
+    }
+}
+
+.date-day {
+  position: relative;
+  right: -0.7em;
+}
+
+#ticket-bar {
+  text-align: center;
+  margin-top: 2ex;
+}
+
+#ticket-button {
+  border-radius: 4px;
+  background: #428BCA;
+  color: #fff;
+  padding: 6px 10px;
+  &:hover {
+    text-decoration: none;
+    background: #4DA3ED;
+  }
+}
+
+.intro {
+  font-size: 28px;
+  margin-top: 5ex;
+}
+
+.header-where {
+  @media (min-width: @screen-md) {
+    position: relative;
+    right: 10px;
+  }
+}
+
+.padded {
+   padding-top: 90px;
+}
+
+.blue-paragraph {
+  color: @lightblue;
+  font-size: 60px;
+}
+
+.grey-paragraph {
+  font-size: 38px;
+  color: @grey;
+}
+
+.grey-paragraph-upper {
+  .grey-paragraph();
+  vertical-align: top;
+}
+
+.white-paragraph {
+  color: white;
+  font-size: 38px;
+}
+
+.main {
+  @media (min-width: @screen-md) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (max-width: @screen-md) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  padding-bottom: 50px;
+  background-color: white;
+  margin-bottom: 70px;
+
+  .page-header {
+    border-width: 5px;
+
+    h2, h1 {
+      margin-bottom: 0px;
+      display: inline-block;
+      font-size: 43px;
+      color: @lightblue;
+    }
+
+    .im {
+      display: inline-block;
+      margin-right: 25px;
+      position: relative;
+      top: 5px;
+    }
+    .image-who {
+      .im();
+      background: url("/images/user.jpg");
+      width: 34px;
+      height: 40px;
+    }
+    .image-where {
+      .im();
+      background: url("/images/location.jpg");
+      width: 30px;
+      height: 40px;
+    }
+    .image-when {
+      .im();
+      background: url("/images/calendar.jpg");
+      width: 37px;
+      height: 40px;
+    }
+    .image-schedule {
+      .im();
+      background: url("/images/clock.jpg");
+      width: 38px;
+      height: 40px;
+    }
+
+  }
+
+
+  .where{
+    @media (min-width: @screen-md) {
+      .map {
+         height: 320px;
+      }
+    }
+    iframe {
+      width: 690px;
+      height: 305px;
+    }
+    .map-details {
+      @media (min-width: @screen-md) {
+        margin-top: 80px;
+        padding-left: 80px;
+        vertical-align: middle;
+        display: inline-block;
+        float: none;
+      }
+      font-size: 20px;
+    }
+
+    .directions {
+      font-size: 18px;
+      h5 {
+        font-size: 28px;
+        color: @body-bg;
+      }
+    }
+  }
+
+  .when {
+    .black {
+      font-size: 28px;
+    }
+      .row {
+        font-size: 18px;
+        @media (min-width: @screen-md) {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .who {
+    .speaker {
+       margin-top: 15px;
+       margin-bottom: 15px;
+       font-size: 30px;
+       text-align: center;
+       text-decoration: underline;
+       p {
+         a {
+           color: black;
+           text-decoration: underline;
+         }
+         margin: 0px;
+       }
+    }
+  }
+
+  .schedule {
+    @media (min-width: @screen-md) {
+      .gray {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: @screen-xs) {
+      .gray {
+          font-size: 40px;
+        }
+    }
+
+    .row {
+       font-size: 20px;
+       @media (max-width: @screen-xs) {
+         font-size: 18px;
+         margin-bottom: 15px;
+       }
+
+       a.black {
+         text-decoration: underline;
+       }
+    }
+  }
+
+  .talk-details {
+    @media (max-width: @screen-xs) {
+      h1 {
+        font-size: 25px !important;
+        text-align: center;
+      }
+
+      .page-header {
+        margin-top: 0px;
+      }
+    }
+    
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .talk-abstract {
+      font-size: 20px;
+    }
+
+
+    @media (max-width: @screen-sm) {
+      .talk-image {
+        margin-top: 70px;
+        img {
+          .center-block();
+        }
+      }
+    }
+
+    .talk-meta {
+      display: block !important;
+      text-align: center;
+      font-size: 30px;
+      .image-clock {
+        display: inline-block;
+        background: url("/images/clock.jpg");
+        width: 38px;
+        height: 40px;
+      }
+    }
+
+    @media (min-width: @screen-md) {
+      .row {
+        display: table-row;
+
+        div {
+          display: table-cell;
+          vertical-align: middle;
+          float: none;
+        }
+      }
+    }
+  }
+
+
+.footer {
+  text-align: center;
+  font-size: 24px;
+}
+
+#tito-register-form {
+  @media (max-width: @screen-xs) {
+    width: 100% !important;
+  }
+  .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+     float: none;
+     margin-left: 0;
+  }
+
+  .radio, .checkbox {
+    display: auto;
+    min-height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+}
+
+.text-content {
+  h1 {
+    margin-top: 5ex;
+    margin-bottom: 2ex;
+  }
+  font-size: 20px;
+  div {
+    margin-bottom: 50px;
+  }
+}
+
+/* tito fixes */
+#tito-register-form {
+  hr {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  p {
+    margin: 10px 0 0 0;
+  }
+  #tito-footer p {
+    margin: 0 0 10px;
+  }
+  .tito-ticket:first-child {
+    border-top: 1px solid #C7C7C7;
+  }
+  .tito-ticket-quantity {
+    position: relative;
+    top: -3px;
+  }
+}
+
+.docker-note {
+  .text-center();
+  font-size: 16px;
+
+  @media (max-width: @screen-xs) {
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

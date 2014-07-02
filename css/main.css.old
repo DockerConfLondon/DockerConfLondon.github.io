@@ -1,0 +1,92 @@
+.container {
+  background-color: #F0F0F0;
+}
+
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #253237;
+  margin-bottom: 0px;
+}
+
+.page-header {
+  border-bottom: 1px solid #394D54;
+}
+
+body {
+  background-color: #91C6C6;
+  /*font-family: 'Cabin', sans-serif;*/
+}
+
+iframe {
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  iframe {
+    position: relative;
+    left: -30px;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  margin-top: 50px;
+  background-color: #253237;
+  color: #F0F0F0;
+  /*font-family: 'Cabin', sans-serif;*/
+}
+
+footer .container {
+  background-color: #253237;
+}
+
+footer .container .row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.schedule-item p.h3 {
+    text-align: right;
+}
+
+
+
+@media (min-width: 768px) {
+  .schedule-item img {
+      height: 50px;
+      width: 50px;
+  }
+
+  .schedule-item {
+      height: 50px;
+      margin-bottom: 15px;
+      vertical-align: middle;
+      overflow: hidden;
+  }
+
+  .schedule-item > div {
+      height: 50px;
+  }
+
+  .schedule-item h3, .schedule-item p.h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding 0;
+    vertical-align: middle;
+    line-height: normal;   
+    line-height: 2.2;
+  }
+}
+
+.talk img {
+    margin-top: 25px;
+}
+
+.breadcrumb {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 15px;
+}
